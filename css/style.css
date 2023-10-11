@@ -6,7 +6,10 @@ img {
 
 :root {
     --ms_bg-color-nav1: hsl(208.09deg 82.46% 11.18%);
-    --ms_bg-color-nav2: hsl(210deg 53.66% 16.08%)
+    --ms_bg-color-nav2: hsl(210deg 53.66% 16.08%);
+    --ms_navbar-width: 80px;
+    --ms_header-main-bg: rgb(27 114 232);
+    
 }
 
 /* COMMON */
@@ -25,19 +28,23 @@ header {
 }
 
 /* MAIN */
-
 main {
     height: calc(100vh - 80px);
-    width: calc(100% - 100px);
+    width: calc(100% - var(--ms_navbar-width));
     /* debug */
     background-color: green;
 }
 
+.header-main {
+    background-color: var(--ms_header-main-bg) ;
+    /* debug */
+    min-height: 100px;
+}
 /* navbar */
 
 .navbar {
     background: linear-gradient(45deg, var(--ms_bg-color-nav2) 0%, var(--ms_bg-color-nav2) 70%, var(--ms_bg-color-nav1) 70%, var(--ms_bg-color-nav1) 100%);
-    width: 100px;
+    width: var(--ms_navbar-width);
     height: calc(100vh - 80px);
 }
 

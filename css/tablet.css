@@ -1,1 +1,5 @@
 /* MEDIA QUERY TABLET */
+
+:root {
+    --ms_navbar-width: 100px;
+}

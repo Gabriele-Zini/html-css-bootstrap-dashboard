@@ -1,1 +1,5 @@
 /* MEDIA QUERY DESKTOP */
+:root {
+    --ms_navbar-width: 120px;
+}
+
