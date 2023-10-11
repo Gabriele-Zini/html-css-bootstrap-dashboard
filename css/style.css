@@ -4,6 +4,11 @@ img {
     max-width: 100%;
 }
 
+:root {
+    --ms_bg-color-nav1: hsl(208.09deg 82.46% 11.18%);
+    --ms_bg-color-nav2: hsl(210deg 53.66% 16.08%)
+}
+
 /* COMMON */
 
 /* layout */
@@ -12,6 +17,28 @@ img {
 
 /* HEADER */
 
+header {
+    height: 80px;
+    width: 100%;
+    /* debug */
+    background-color: purple;
+}
+
 /* MAIN */
+
+main {
+    height: calc(100vh - 80px);
+    width: calc(100% - 100px);
+    /* debug */
+    background-color: green;
+}
+
+/* navbar */
+
+.navbar {
+    background: linear-gradient(45deg, var(--ms_bg-color-nav2) 0%, var(--ms_bg-color-nav2) 70%, var(--ms_bg-color-nav1) 70%, var(--ms_bg-color-nav1) 100%);
+    width: 100px;
+    height: calc(100vh - 80px);
+}
 
 /* FOOTER */
