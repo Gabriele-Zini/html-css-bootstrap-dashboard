@@ -1,0 +1,39 @@
+:root {
+    --ms_navbar-width: 60px;
+}
+
+/* COMMON */
+
+/* layout */
+
+/* utilities */
+
+/* HEADER */
+
+
+
+/* MAIN */
+
+
+table {
+    font-size: .8rem;
+}
+
+td img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+td span {
+    display: inline-block;
+    color: white;
+    border-radius: 10px;
+    padding: .1rem .5rem;
+}
+
+/* navbar */
+
+
+
+/* FOOTER */

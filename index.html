@@ -13,6 +13,8 @@
     />
     <!-- custom style -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- small breakpoint min-width 375px -->
+    <link rel="stylesheet" href="./css/small-bp.css" media="(min-width: 375px)">
     <!-- media query tablet -->
     <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px)" />
     <!-- media query desktop -->
@@ -32,8 +34,7 @@
   </head>
   <body>
     <!-- header -->
-    <header>
-    </header>
+    <header></header>
     <!-- /header -->
 
     <!-- wrapper -->
@@ -42,6 +43,248 @@
       <!-- main -->
       <main class="overflow-auto">
         <div class="header-main"></div>
+        <div class="container-fluid row gx-0 px-2 p-3">
+          <div class="col-12 col-lg-8">
+            <div class="bg-white rounded-3">
+              <div class="border bg-light">
+                <h3 class="p-3 fs-5">Prossime classi</h3>
+              </div>
+              <div class="p-3 border">
+
+                <!-- table -->
+                <table class="table table-responsive">
+                  <tr>
+                    <th>Nome</th>
+                    <th class="d-none d-md-table-cell">Data Inizio</th>
+                    <th class="d-none d-md-table-cell">ROI</th>
+                    <th>Stato</th>
+                    <th>Azioni</th>
+                  </tr>
+
+                  <!-- table row -->
+                  <tr>
+                    <td>
+                      <img
+                        class="me-2"
+                        src="./img/class-avatar.jpg"
+                        alt="class avatar"
+                      />Classe 75
+                    </td>
+                    <td class="d-none d-md-table-cell table-al">15 febbraio 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td><span class="py-md-1 px-md-3 bg-success">Done</span></td>
+                    <td>
+                      <button
+                        class="me-1 rounded-1 border-secondary text-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-pen"></i></button
+                      ><button
+                        class="rounded-1 text-secondary border-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- table row -->
+                  <tr>
+                    <td>
+                      <img
+                        class="me-2"
+                        src="./img/class-avatar.jpg"
+                        alt="class avatar"
+                      />Classe 75
+                    </td>
+                    <td class="d-none d-md-table-cell table-al">15 febbraio 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td><span class="py-md-1 px-md-3 bg-success">Done</span></td>
+                    <td>
+                      <button
+                        class="me-1 rounded-1 border-secondary text-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-pen"></i></button
+                      ><button
+                        class="rounded-1 text-secondary border-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- table row -->
+                  <tr>
+                    <td>
+                      <img
+                        class="me-2"
+                        src="./img/class-avatar.jpg"
+                        alt="class avatar"
+                      />Classe 75
+                    </td>
+                    <td class="d-none d-md-table-cell table-al">15 febbraio 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td><span class="py-md-1 px-md-3 bg-warning">Process</span></td>
+                    <td>
+                      <button
+                        class="me-1 rounded-1 border-secondary text-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-pen"></i></button
+                      ><button
+                        class="rounded-1 text-secondary border-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- table row -->
+                  <tr>
+                    <td>
+                      <img
+                        class="me-2"
+                        src="./img/class-avatar.jpg"
+                        alt="class avatar"
+                      />Classe 75
+                    </td>
+                    <td class="d-none d-md-table-cell table-al">15 febbraio 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td><span class="py-md-1 px-md-3 bg-success">Done</span></td>
+                    <td>
+                      <button
+                        class="me-1 rounded-1 border-secondary text-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-pen"></i></button
+                      ><button
+                        class="rounded-1 text-secondary border-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- table row -->
+                  <tr>
+                    <td>
+                      <img
+                        class="me-2"
+                        src="./img/class-avatar.jpg"
+                        alt="class avatar"
+                      />Classe 75
+                    </td>
+                    <td class="d-none d-md-table-cell table-al">15 febbraio 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td><span class="py-md-1 px-md-3 bg-danger">Failed</span></td>
+                    <td>
+                      <button
+                        class="me-1 rounded-1 border-secondary text-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-pen"></i></button
+                      ><button
+                        class="rounded-1 text-secondary border-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- table row -->
+                  <tr>
+                    <td>
+                      <img
+                        class="me-2"
+                        src="./img/class-avatar.jpg"
+                        alt="class avatar"
+                      />Classe 75
+                    </td>
+                    <td class="d-none d-md-table-cell table-al">15 febbraio 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td><span class="py-md-1 px-md-3 bg-success">Done</span></td>
+                    <td>
+                      <button
+                        class="me-1 rounded-1 border-secondary text-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-pen"></i></button
+                      ><button
+                        class="rounded-1 text-secondary border-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- table row -->
+                  <tr>
+                    <td>
+                      <img
+                        class="me-2"
+                        src="./img/class-avatar.jpg"
+                        alt="class avatar"
+                      />Classe 75
+                    </td>
+                    <td class="d-none d-md-table-cell table-al">15 febbraio 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td><span class="py-md-1 px-md-3 bg-warning">Process</span></td>
+                    <td>
+                      <button
+                        class="me-1 rounded-1 border-secondary text-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-pen"></i></button
+                      ><button
+                        class="rounded-1 text-secondary border-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- table row -->
+                  <tr>
+                    <td>
+                      <img
+                        class="me-2"
+                        src="./img/class-avatar.jpg"
+                        alt="class avatar"
+                      />Classe 75
+                    </td>
+                    <td class="d-none d-md-table-cell table-al">15 febbraio 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td><span class="py-md-1 px-md-3 bg-success">Done</span></td>
+                    <td>
+                      <button
+                        class="me-1 rounded-1 border-secondary text-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-pen"></i></button
+                      ><button
+                        class="rounded-1 text-secondary border-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- table row -->
+                  <tr>
+                    <td>
+                      <img
+                        class="me-2"
+                        src="./img/class-avatar.jpg"
+                        alt="class avatar"
+                      />Classe 75
+                    </td>
+                    <td class="d-none d-md-table-cell table-al">15 febbraio 2021</td>
+                    <td class="d-none d-md-table-cell">20%</td>
+                    <td><span class="py-md-1 px-md-3 bg-danger">Failed</span></td>
+                    <td>
+                      <button
+                        class="me-1 rounded-1 border-secondary text-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-pen"></i></button
+                      ><button
+                        class="rounded-1 text-secondary border-secondary btn-md"
+                      >
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  
+                </table>
+              </div>
+            </div>
+            <div class="faq"></div>
+          </div>
+          <div class="todo col-12 col-lg-4"></div>
+        </div>
       </main>
       <!-- /main -->
     </div>
