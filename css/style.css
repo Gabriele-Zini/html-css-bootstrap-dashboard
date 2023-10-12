@@ -30,6 +30,14 @@ table * {
 }
 
 
+.popover a {
+    text-decoration: none;
+}
+
+.popover li:hover {
+   background-color: lightgray;
+}
+
 /* layout */
 
 /* utilities */
@@ -68,6 +76,7 @@ header {
 
 .fa-bell {
     color: orange;
+    border-color: transparent;
 }
 
 /* MAIN */
