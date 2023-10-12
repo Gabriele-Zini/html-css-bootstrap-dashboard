@@ -45,12 +45,8 @@
         <div
           class="container-fluid d-flex justify-content-start gap-3 flex-nowrap"
         >
-          <a class="navbar-brand-mobile d-lg-none"
-            ><img src="./img/mobile-logo.png" alt=""
-          /></a>
-          <a class="navbar-brand d-none d-lg-inline-block"
-            ><img src="./img/logo.svg" alt=""
-          /></a>
+          <a class="navbar-brand-mobile d-lg-none"><img src="./img/mobile-logo.png" alt=""/></a>
+          <a class="navbar-brand d-none d-lg-inline-block"><img src="./img/logo.svg" alt=""/></a>
           <form class="flex-grow-1 input-wrapper">
             <div class="py-1 px-2 border d-flex">
               <i
@@ -64,102 +60,62 @@
               />
             </div>
           </form>
-          <i class="fa-solid fa-list-ul d-none d-lg-inline fs-5"></i>
-          <i class="fa-solid fa-circle-question d-none d-lg-inline fs-5"></i>
-          <i
-            class="fa-regular fa-ellipsis-vertical d-none d-lg-inline fw-bolder fs-5"
-          ></i>
-          <i class="fa-solid fa-bell fs-5"></i>
+            <ul class="d-flex gap-3 list-unstyled mb-0">
+              <li class="d-none d-lg-block"><a class="text-decoration-none text-dark" href=""><i class="fa-solid fa-list-ul d-none text-dark d-lg-inline fs-5"></i></a></li>
+              <li class="d-none d-lg-block"><a class="text-decoration-none text-dark" href=""><i class="fa-solid fa-circle-question d-none text-dark d-lg-inline fs-5"></i></a></li>
+              <li class="d-none d-lg-block"><a class="text-decoration-none text-dark" href=""><i class="fa-regular fa-ellipsis-vertical d-none text-dark d-lg-inline fw-bolder fs-5"></i></a></li>
+              <li><a class="text-decoration-none text-dark ms-2 ms-lg-0"  href=""><i class="fa-solid fa-bell fs-5"></i></a></li>
+            </ul>
         </div>
       </nav>
     </header>
     <!-- /header -->
 
+    
 
     <!-- wrapper -->
     <div class="wrapper d-flex">
-      <nav
-        class="side-navbar d-flex flex-column justify-content-between align-items-center"
-      >
+
+      <nav class="side-navbar d-flex flex-column justify-content-between align-items-center">
         <!-- navbar buttons -->
-        <div class="d-flex flex-column gap-2">
-          <div class="mt-4">
-            <a class="text-white" href=""
-              ><i class="fa-solid fa-house me-lg-3"></i
-            ></a>
-            <a
-              class="text-white text-decoration-none d-none d-lg-inline"
-              href=""
-              >Home</a
-            >
-          </div>
-          <div>
-            <a class="text-white" href=""
-              ><i class="fa-solid fa-chart-simple me-lg-3"></i
-            ></a>
-            <a
-              class="text-white text-decoration-none d-none d-lg-inline"
-              href=""
-              >Stats</a
-            >
-          </div>
-          <div>
-            <a class="text-white" href=""
-              ><i class="fa-solid fa-signal me-lg-3"></i
-            ></a>
-            <a
-              class="text-white text-decoration-none d-none d-lg-inline"
-              href=""
-              >Signals</a
-            >
-          </div>
-        </div>
+          <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+            <li class="d-flex gap-3 mt-4">
+              <a class="text-white" href=""><i class="fa-solid fa-house"></i></a>
+              <a class="text-white text-decoration-none d-none d-lg-inline"href="">Home</a>
+            </li>
+            <li class="d-flex gap-3">
+              <a class="text-white" href=""><i class="fa-solid fa-chart-simple "></i></a>
+              <a class="text-white text-decoration-none d-none d-lg-inline"href="">Stats</a>
+            </li>
+            <li class="d-flex gap-3">
+              <a class="text-white" href=""><i class="fa-solid fa-signal"></i></a>
+              <a class="text-white text-decoration-none d-none d-lg-inline"href="">Signals</a>
+            </li>
+          </ul>
 
         <!-- settings button -->
-        <div class="mb-4">
-          <a class="text-white" href=""
-            ><i class="fa-solid fa-gear me-lg-3"></i
-          ></a>
-          <a class="text-white text-decoration-none d-none d-lg-inline" href=""
-            >Admin</a
-          >
+        <div class="mb-4 d-flex gap-3">
+          <a class="text-white" href=""><i class="fa-solid fa-gear"></i></a>
+          <a class="text-white text-decoration-none d-none d-lg-inline" href="">Admin</a>
         </div>
       </nav>
+
       <!-- main -->
       <main class="overflow-auto">
+
         <!-- header-main -->
         <div class="container-fluid header-main">
           <div
-            class="d-flex flex-column flex-md-row justify-content-md-between gap-4 gap-md-0 py-4"
-          >
-
-            <!-- modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div
-                class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable overflow-auto"
-              >
-                <div class="modal-content">
-                  <div class="modal-header border-bottom-0">
-                    <h5 class="modal-title fs-3" id="exampleModalLabel">
-                      Inserisci un nuovo studente
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
+            class="d-flex flex-column flex-md-row justify-content-md-between gap-4 gap-md-0 py-4">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
+                  <div class="offcanvas-body">
                     <form>
 
-                      <!-- first modal row -->
+                      <!-- first offcanvas row -->
                       <div class="mb-3 d-flex">
                         <div class="me-3 w-50">
                           <label for="recipient-name" class="col-form-label"
@@ -183,15 +139,13 @@
                         </div>
                       </div>
 
-                      <!-- second modal row -->
+                      <!-- second offcanvas row -->
                       <div class="d-flex">
                         <div class="w-50">
                           <p class="d-block email-label mb-2">Email</p>
                           <div class="input-group mb-3">
                             <label for="basic-addon1"></label>
-                            <span class="input-group-text" id="basic-addon1"
-                              >@</span
-                            >
+                            <span class="input-group-text" id="basic-addon1">@</span>
                             <input
                               type="email"
                               class="form-control"
@@ -213,28 +167,28 @@
                         </div>
                       </div>
 
-                      <!-- third modal row -->
+                      <!-- third offcanvas row -->
                       <div class="mb-3">
                         <label for="formFile" class="form-label">Foto</label>
                         <input class="form-control" type="file" id="formFile" />
                       </div>
 
-                      <!-- fourth modal row -->
+                      <!-- fourth offcanvas row -->
                       <div class="w-100">
                         <label class="mb-2" for="address">Indirizzo</label>
                         <input class="form-control" type="text" id="address" />
                       </div>
 
-                      <!-- fifth modal row -->
+                      <!-- fifth offcanvas row -->
                       <div class="d-flex mt-3 align-items-end">
-                        <div class="w-50 me-3">
-                          <label class="mb-3" for="city">Città</label>
+                        <div class="w-25 me-3">
+                          <label class="mb-2" for="city">Città</label>
                           <input class="form-control" type="text" id="city" />
                         </div>
-                        <div class="me-3 w-25">
+                        <div class="me-3 w-">
                           <label for="states">Stato</label>
                           <select
-                            class="form-select mt-3"
+                            class="form-select mt-2"
                             aria-label="Default select example"
                           >
                             <option selected>Scegli</option>
@@ -261,25 +215,25 @@
                           </select>
                         </div>
                         <div class="w-25">
-                          <label class="mb-3" for="">C.A.P.</label>
+                          <label class="mb-2" for="">C.A.P.</label>
                           <input class="form-control" type="text" id="" />
                         </div>
                       </div>
 
-                      <!-- modal buttons -->
+                      <!-- offcanvas buttons -->
                       <div class="d-flex align-items-baseline flex-lg-column">
-                        <div class="mb-3 ms-3 mt-5 form-check">
+                        <div class="mb-3 mt-5 form-check">
                           <input
                             type="checkbox"
                             class="form-check-input"
                             id="check-box"
                           />
-                          <label class="form-check-label" for="check-box"
+                          <label class="form-check-label me-2" for="check-box"
                             >Seleziona per proseguire</label
                           >
                         </div>
                         <div
-                          class="modal-footer border-top-0 d-flex justify-content-start"
+                          class="offcanvas-footer border-top-0 d-flex justify-content-start gap-1 ms-lg-0 ps-lg-0"
                         >
                           <button type="button" class="btn btn-primary">
                             Salva
@@ -294,11 +248,9 @@
                         </div>
                       </div>
                     </form>
+
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- /modal -->
 
 
             <!-- header-main col -->
@@ -306,21 +258,15 @@
               class="d-flex align-items-baseline gap-2 gap-md-2 justify-content mt-2 ms-3 order-md-last me-md-3"
             >
               <p class="text-white">Nuovo studente</p>
-              <button
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-whatever="@mdo"
-                class="btn btn-outline text-white border-white btn-sm"
-              >
-                <i class="fa-solid fa-plus"></i>
+              <button class="btn btn-outline-light text-white"
+              type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i>
               </button>
             </div>
 
             <!-- header-main col -->
             <div class="flex-shrink-0">
               <div class="text-white ms-3">
-                <h4 class="d-inline-block">Boolean</h4>
+                <h4 class="d-inline-block fs-2">Boolean</h4>
                 <a class="text-decoration-none btn-header-main text-white"
                   >Piano blaze</a
                 >
@@ -362,7 +308,7 @@
 
         <!-- row -->
         <div class="container-fluid p-0 ms-0 row">
-          
+
           <!-- bigger col   -->
           <div class="col-12 col-lg-8">
             <div class="bg-white border border-2 mt-4 rounded-3">
@@ -737,6 +683,7 @@
             </div>
           </div>
 
+
           <!-- smaller col -->
 
           <!-- todo -->
@@ -746,40 +693,40 @@
 
               <!-- checkbox container -->
               <div class="p-3 border-top border-2 bg-white">
-                <div class="form-check py-3 border border-2">
+                <div class="form-check py-3 border border-2 d-flex">
                   <input
-                    class="form-check-input ms-1"
+                    class="form-check-input ms-1 flex-shrink-0"
                     type="checkbox"
                     value=""
-                    id="flexCheckDefault"
+                    id="flexCheckChecked1"
                   />
-                  <label class="form-check-label ms-2" for="flexCheckDefault">
+                  <label class="form-check-label ms-2" for="flexCheckChecked1">
                     Kickoff nuove classi
                   </label>
                 </div>
 
-                <div class="form-check py-3 border border-2 border-top-0">
-                  <input
-                    class="form-check-input ms-1"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckChecked1"
-                    checked
-                  />
-                  <label class="form-check-label ms-2" for="flexCheckChecked">
-                    Lezione su bootstrap 5
+                <div class="form-check py-3 border border-2 border-top-0 d-flex">
+                    <input
+                      class="form-check-input ms-1 flex-shrink-0"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked2"
+                      checked
+                    />
+                  <label class="form-check-label ms-2" for="flexCheckChecked2">
+                    Lezione su bootstrap 5 in classe #75
                   </label>
                 </div>
 
-                <div class="form-check py-3 border border-2 border-top-0">
+                <div class="form-check py-3 border border-2 border-top-0 d-flex">
                   <input
-                    class="form-check-input ms-1"
+                    class="form-check-input ms-1 flex-shrink-0"
                     type="checkbox"
                     value=""
-                    id="flexCheckChecked2"
+                    id="flexCheckChecked3"
                     checked
                   />
-                  <label class="form-check-label ms-2" for="flexCheckChecked">
+                  <label class="form-check-label ms-2" for="flexCheckChecked3">
                     Controllare git hub studenti
                   </label>
                 </div>

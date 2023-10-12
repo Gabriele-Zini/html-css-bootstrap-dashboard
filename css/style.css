@@ -42,8 +42,14 @@ header {
     /* debug */
 }
 
+.navbar-brand {
+    width: 150px;
+    margin-right: -15px;
+    padding: 0;
+}
+
 .navbar-brand-mobile {
-    width: 50px;
+    width: 60px;
 }
 
 .form-control:focus {
