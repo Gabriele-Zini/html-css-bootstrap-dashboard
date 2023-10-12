@@ -19,6 +19,17 @@ table * {
     vertical-align: middle;
 }
 
+.modal {
+    height: 1000px;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    height: 1000px;
+    overflow-y: auto;
+}
+
+
 /* layout */
 
 /* utilities */
@@ -29,7 +40,28 @@ header {
     height: 80px;
     width: 100%;
     /* debug */
-    background-color: purple;
+}
+
+.navbar-brand-mobile {
+    width: 50px;
+}
+
+.form-control:focus {
+    border-color: 0;
+    box-shadow: none;
+    background-color: rgb(229 229 229);
+}
+
+.input-wrapper {
+    background-color: rgb(229 229 229 )
+}
+
+.ms_form-control {
+    background-color: rgb(229 229 229);
+}
+
+.fa-bell {
+    color: orange;
 }
 
 /* MAIN */
@@ -41,9 +73,14 @@ main {
 }
 
 .header-main {
-    background-color: var(--ms_header-main-bg) ;
-    /* debug */
-    min-height: 100px;
+    background-color: var(--ms_header-main-bg);
+    padding: .5rem;
+}
+
+.btn-header-main {
+    background-color: rgb(53, 53, 181);
+    border-radius: 15px;
+    padding: .3rem .4rem;
 }
 
 table {
@@ -68,14 +105,12 @@ td button {
     border: 1px solid gray;
 }
 
-
 /* navbar */
 
-.navbar {
+.side-navbar {
     background: linear-gradient(45deg, var(--ms_bg-color-nav2) 0%, var(--ms_bg-color-nav2) 70%, var(--ms_bg-color-nav1) 70%, var(--ms_bg-color-nav1) 100%);
     width: var(--ms_navbar-width);
     height: calc(100vh - 80px);
 }
-
 
 /* FOOTER */

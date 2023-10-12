@@ -26,11 +26,6 @@ table {
 
 /* navbar */
 
-.navbar {
-    background: linear-gradient(45deg, var(--ms_bg-color-nav2) 0%, var(--ms_bg-color-nav2) 70%, var(--ms_bg-color-nav1) 70%, var(--ms_bg-color-nav1) 100%);
-    width: var(--ms_navbar-width);
-    height: calc(100vh - 80px);
-}
 
 
 /* FOOTER */

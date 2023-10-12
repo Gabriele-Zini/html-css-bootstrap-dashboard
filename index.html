@@ -38,25 +38,334 @@
   </head>
   <body>
     <!-- header -->
-    <header></header>
+    <header>
+      <nav class="navbar navbar-light h-100">
+        <div
+          class="container-fluid d-flex justify-content-start gap-3 flex-nowrap"
+        >
+          <a class="navbar-brand-mobile d-lg-none"
+            ><img src="./img/mobile-logo.png" alt=""
+          /></a>
+          <a class="navbar-brand d-none d-lg-inline-block"
+            ><img src="./img/logo.svg" alt=""
+          /></a>
+          <form class="flex-grow-1 input-wrapper">
+            <div class="py-1 px-2 border d-flex">
+              <i
+                class="fa-solid fa-magnifying-glass text-secondary d-inline fa-align-justify mt-2 fs-5"
+              ></i>
+              <input
+                class="form-control ms_form-control border-0"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </div>
+          </form>
+          <i class="fa-solid fa-list-ul d-none d-lg-inline fs-5"></i>
+          <i class="fa-solid fa-circle-question d-none d-lg-inline fs-5"></i>
+          <i
+            class="fa-regular fa-ellipsis-vertical d-none d-lg-inline fw-bolder fs-5"
+          ></i>
+          <i class="fa-solid fa-bell fs-5"></i>
+        </div>
+      </nav>
+    </header>
     <!-- /header -->
 
     <!-- wrapper -->
     <div class="wrapper d-flex">
-      <nav class="navbar"></nav>
+      <nav
+        class="side-navbar d-flex flex-column justify-content-between align-items-center"
+      >
+        <!-- navbar buttons -->
+        <div class="d-flex flex-column gap-2">
+          <div class="mt-4">
+            <a class="text-white" href=""
+              ><i class="fa-solid fa-house me-lg-3"></i
+            ></a>
+            <a
+              class="text-white text-decoration-none d-none d-lg-inline"
+              href=""
+              >Home</a
+            >
+          </div>
+          <div>
+            <a class="text-white" href=""
+              ><i class="fa-solid fa-chart-simple me-lg-3"></i
+            ></a>
+            <a
+              class="text-white text-decoration-none d-none d-lg-inline"
+              href=""
+              >Stats</a
+            >
+          </div>
+          <div>
+            <a class="text-white" href=""
+              ><i class="fa-solid fa-signal me-lg-3"></i
+            ></a>
+            <a
+              class="text-white text-decoration-none d-none d-lg-inline"
+              href=""
+              >Signals</a
+            >
+          </div>
+        </div>
+
+        <!-- settings button -->
+        <div class="mb-4">
+          <a class="text-white" href=""
+            ><i class="fa-solid fa-gear me-lg-3"></i
+          ></a>
+          <a class="text-white text-decoration-none d-none d-lg-inline" href=""
+            >Admin</a
+          >
+        </div>
+      </nav>
       <!-- main -->
       <main class="overflow-auto">
-        <div class="header-main"></div>
+        <!-- header-main -->
+        <div class="container-fluid header-main">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-md-between gap-4 gap-md-0 py-4"
+          >
+            <!-- col -->
+            <div
+              class="d-flex align-items-baseline gap-2 gap-md-2 justify-content mt-2 ms-3 order-md-last me-md-3"
+            >
+              <p class="text-white">Nuovo studente</p>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo"
+                class="btn btn-outline text-white border-white btn-sm"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+
+            <!-- modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable overflow-auto"
+              >
+                <div class="modal-content">
+                  <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title fs-3" id="exampleModalLabel">
+                      Inserisci un nuovo studente
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <!-- first row -->
+                      <div class="mb-3 d-flex">
+                        <div class="me-3 w-50">
+                          <label for="recipient-name" class="col-form-label"
+                            >Nome</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="recipient-name"
+                          />
+                        </div>
+                        <div class="w-50">
+                          <label for="recipient-name" class="col-form-label"
+                            >Cognome</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="recipient-name"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- second row -->
+                      <div class="d-flex">
+                        <div class="w-50">
+                          <p class="d-block email-label mb-2">Email</p>
+                          <div class="input-group mb-3">
+                            <label for="basic-addon1"></label>
+                            <span class="input-group-text" id="basic-addon1"
+                              >@</span
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              placeholder=""
+                              aria-label="Username"
+                              aria-describedby="basic-addon1"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="mb-3 w-50 ms-3">
+                          <label for="password" class="form-label"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="password"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- third row -->
+                      <div class="mb-3">
+                        <label for="formFile" class="form-label">Foto</label>
+                        <input class="form-control" type="file" id="formFile" />
+                      </div>
+
+                      <!-- fourth row -->
+                      <div class="w-100">
+                        <label class="mb-2" for="address">Indirizzo</label>
+                        <input class="form-control" type="text" id="address" />
+                      </div>
+
+                      <!-- fifth row -->
+                      <div class="d-flex mt-3 align-items-end">
+                        <div class="w-50 me-3">
+                          <label class="mb-3" for="city">Città</label>
+                          <input class="form-control" type="text" id="city" />
+                        </div>
+
+                        <div class="me-3 w-25">
+                          <label for="states">Stato</label>
+                          <select
+                            class="form-select mt-3"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Scegli</option>
+                            <option value="13">Austria</option>
+                            <option value="14">Belgio</option>
+                            <option value="20">Croazia</option>
+                            <option value="10">Danimarca</option>
+                            <option value="3">Germania</option>
+                            <option value="12">Grecia</option>
+                            <option value="17">Irlanda</option>
+                            <option value="1">Italia</option>
+                            <option value="9">Norvegia</option>
+                            <option value="7">Olanda</option>
+                            <option value="18">Polonia</option>
+                            <option value="6">Portogallo</option>
+                            <option value="2">Francia</option>
+                            <option value="11">Finlandia</option>
+                            <option value="5">Regno Unito</option>
+                            <option value="16">Repubblica Ceca</option>
+                            <option value="15">Svizzera</option>
+                            <option value="8">Svezia</option>
+                            <option value="4">Spagna</option>
+                            <option value="19">Ungheria</option>
+                          </select>
+                        </div>
+
+                        <div class="w-25">
+                          <label class="mb-3" for="">C.A.P.</label>
+                          <input class="form-control" type="text" id="" />
+                        </div>
+                      </div>
+
+                      <!-- modal buttons -->
+                      <div class="d-flex align-items-baseline flex-lg-column">
+                        <div class="mb-3 ms-3 mt-5 form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="check-box"
+                          />
+                          <label class="form-check-label" for="check-box"
+                            >Seleziona per proseguire</label
+                          >
+                        </div>
+                        <div
+                          class="modal-footer border-top-0 d-flex justify-content-start"
+                        >
+                          <button type="button" class="btn btn-primary">
+                            Salva
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-warning"
+                            data-bs-dismiss="modal"
+                          >
+                            Svuota
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /modal -->
+
+            <!-- col -->
+            <div class="flex-shrink-0">
+              <div class="text-white ms-3">
+                <h4 class="d-inline-block">Boolean</h4>
+                <a class="text-decoration-none btn-header-main text-white"
+                  >Piano blaze</a
+                >
+              </div>
+              <div class="ms-3 mt-2">
+                <a class="text-decoration-none btn-header-main text-white"
+                  >3 app</a
+                >
+                <a class="text-white"
+                  ><i class="fa-solid fa-angles-right"></i
+                ></a>
+                <a
+                  class="text-decoration-none btn-header-main text-white d-lg-none"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                  <a
+                    class="text-decoration-none btn-header-main text-white d-none d-lg-inline"
+                    >Boolean mobile app</a
+                  >
+                  <a
+                    class="text-decoration-none btn-header-main text-white d-none d-lg-inline"
+                    >Boolean web app</a
+                  >
+                  <a
+                    class="text-decoration-none btn-header-main text-white d-none d-lg-inline"
+                    >Boolean blog app</a
+                  >
+                </a>
+              </div>
+            </div>
+
+            <!-- col -->
+            <div class="text-white ms-3 mt-2 flex-shrink-1">
+              <p class="mb-0">Studenti online negli ultimi 30 minuti</p>
+              <p class="fs-3">125</p>
+            </div>
+          </div>
+        </div>
 
         <!-- row -->
-        <div class="container-fluid pe-0 row">
+        <div class="container-fluid p-0 ms-0 row">
           <!-- bigger col   -->
           <div class="col-12 col-lg-8">
-            <div class="bg-white border border-2 mt-4">
+            <div class="bg-white border border-2 mt-4 rounded-3">
               <div class="bg-light">
                 <h3 class="p-3 fs-5 mb-0">Prossime classi</h3>
               </div>
-              <div class="p-3 border-top border-2">
+              <div class="p-2 border-top border-2">
                 <!-- table -->
                 <table class="table table-responsive">
                   <tr>
@@ -318,9 +627,9 @@
             </div>
 
             <!-- faq section -->
-            <div class="faq mt-lg-4 mb-lg-4">
-              <div class="bg-white rounded-3 shadow">
-                <div class="border border-2 bg-light">
+            <div class="faq mt-4 mb-lg-4 ">
+              <div class=shadow">
+                <div class="border border-2 bg-light rounded-3">
                   <h3 class="p-3 fs-5 text-uppercase mb-0">F.a.q</h3>
 
                   <div class="bg-white border-top border-2">
@@ -450,7 +759,7 @@
                     class="form-check-input ms-1"
                     type="checkbox"
                     value=""
-                    id="flexCheckChecked"
+                    id="flexCheckChecked1"
                     checked
                   />
                   <label class="form-check-label ms-2" for="flexCheckChecked">
@@ -463,7 +772,7 @@
                     class="form-check-input ms-1"
                     type="checkbox"
                     value=""
-                    id="flexCheckChecked"
+                    id="flexCheckChecked2"
                     checked
                   />
                   <label class="form-check-label ms-2" for="flexCheckChecked">
@@ -475,12 +784,12 @@
 
             <!-- histogram -->
             <div
-              class="histogram mt-4 border border-2 shadow p-3 pb-1 mb-3 mb-lg-0 bg-white"
+              class="histogram mt-4 border border-2 shadow p-3 pb-1 mb-3 mb-lg-0 bg-white rounded-3"
             >
-              <div class="border border-2">
+              <div class="border border-2 p-3">
                 <img src="./img/stats.jpeg" alt="histogram" />
                 <h4>Utenti attivi</h4>
-                <p class="">Lista degli utenti più attivi</p>
+                <p>Lista degli utenti più attivi</p>
               </div>
               <ul class="list-unstyled">
                 <li class="border border-2 border-bottom-0 border-top-0 p-3">
