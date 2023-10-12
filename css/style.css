@@ -50,6 +50,10 @@ header {
     /* debug */
 }
 
+.blue-btn:hover i {
+    color: blue;
+}
+
 .navbar-brand {
     width: 150px;
     margin-right: -15px;
@@ -77,6 +81,10 @@ header {
 .fa-bell {
     color: orange;
     border-color: transparent;
+}
+
+.fa-bell:hover {
+    color: red;
 }
 
 /* MAIN */
@@ -108,16 +116,24 @@ td img {
     border-radius: 50%;
 }
 
+td:hover {
+    background-color: lightgray;
+}
+
 td span {
     display: inline-block;
     color: white;
     border-radius: 10px;
     padding: .1rem .4rem;
+    cursor: pointer;
 }
-
 
 td button {
     border: 1px solid gray;
+}
+
+td button:hover {
+    filter: brightness(1.2);
 }
 
 /* navbar */
@@ -127,5 +143,11 @@ td button {
     width: var(--ms_navbar-width);
     height: calc(100vh - 80px);
 }
+
+.side-navbar li:hover {
+    background-color: gray;
+}
+
+
 
 /* FOOTER */
